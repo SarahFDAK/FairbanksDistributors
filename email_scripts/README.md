@@ -5,7 +5,7 @@
 windows_scrape_inbox_and_print.py
 ```
 
-### Run scraper without console window (sliently in the background)
+### Run scraper without console window (silently in the background)
 ```
 windows_scrape_inbox_and_print.pyw
 ```
