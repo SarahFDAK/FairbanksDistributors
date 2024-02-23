@@ -71,7 +71,7 @@ export const routes = [
     {
       "storeName": "IGA",
       "rsr": [""]
-    }
+    },
 
 ];
 
