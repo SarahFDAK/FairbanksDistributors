@@ -20,9 +20,6 @@
         v-if="!isLoggedIn"
         v-on:login="onLoggin($event)"
       />
-      <SpreadsheetUpload
-        v-else-if="uploadScreenActive"
-        />
       <MainMenu
         v-else-if="mainMenuActive"
         v-on:createOrder="createOrder"
@@ -39,14 +36,13 @@
 import Login from './components/Login';
 import Order from './components/Order';
 import MainMenu from './components/MainMenu';
-import SpreadsheetUpload from './components/SpreadsheetUpload';
 import store from './store';
 import { apiUrl } from './data/api';
 
 import {
   LOGIN, LOGOUT, HIDEMAIN,
-  SHOWMAIN, SET_CATEGORIES, SET_DATA,
-  SHOW_UPLOAD
+  SHOWMAIN, SET_DATA,
+  SHOW_UPLOAD, SET_STORES
 } from './store/orders/mutation';
 
 export default {
@@ -56,7 +52,6 @@ export default {
     Login,
     MainMenu,
     Order,
-    SpreadsheetUpload
   },
   data: () => ({
     checkedStorage: false,
@@ -71,21 +66,35 @@ export default {
       }
     },
     onLoggin: function(password) {
-      const url = `${apiUrl}/items/chips?auth_key=${password}`;
-      const freezer_bread_url = `${apiUrl}/items/freezer_bread?auth_key=${password}`;
-      
-      this.$http.get(url)
+      const chips_url = `${apiUrl}/chips/items?auth_key=${password}`;
+      const freezer_bread_url = `${apiUrl}/freezer_bread/items?auth_key=${password}`;
+
+      this.$http.get(chips_url)
         .then(resp => {
           this.checkedStorage = true;
           const chip_tuple = {data_type: 'chips', data: resp.body};
           this.$store.dispatch(SET_DATA, chip_tuple);
         })
+
       this.$http.get(freezer_bread_url)
         .then(resp => {
           const freezer_bread_tuple = {data_type: 'freezer_bread', data: resp.body};
           this.$store.dispatch(SET_DATA, freezer_bread_tuple);
         })
+
+      this.loadStores(password);
+
       this.$store.dispatch(LOGIN, password);
+    },
+    loadStores: function(password) {
+      const storesUrl = `${apiUrl}/stores?auth_key=${password}`;
+
+      this.$http.get(storesUrl).then(
+        resp => {
+          const stores = resp.body;
+          this.$store.dispatch(SET_STORES, stores);
+        }
+      );
     },
     onLogout: function() {
       this.$store.dispatch(LOGOUT);
@@ -98,7 +107,6 @@ export default {
       this.$store.dispatch(SHOWMAIN);
     },
     setUploadSpreadsheetMenu: function() {
-      console.log('show upload');
       this.$store.dispatch(SHOW_UPLOAD);
     }
   },

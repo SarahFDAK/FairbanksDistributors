@@ -24,9 +24,9 @@
             <template slot="label"> <div class="headline black--text">Delivery Location</div></template>
             <v-divider style="margin-bottom: 10px"></v-divider>
 
-            <template v-for="location in storeNames">
-                <v-radio  :value="location" color="primary">
-                    <template slot="label"> <div class="subheading black--text">{{location}}</div></template>
+            <template v-for="location in stores">
+                <v-radio v-bind:key="location.id" :value="location" color="primary">
+                    <template slot="label"> <div class="subheading black--text">{{location.name}}</div></template>
                 </v-radio>
             </template>
         </v-radio-group>
@@ -53,8 +53,8 @@ function nextDay(date){
             orderDate() {
                 return this.$store.getters.getOrderDate;
             },
-            storeNames() {
-                return this.$store.getters.getStoreNames;
+            stores() {
+                return this.$store.getters.getStores;
             },
             orderTypes() {
                 return this.$store.getters.getOrderTypes;
@@ -88,14 +88,10 @@ function nextDay(date){
             this.loadOrderLocation()
         },
     }
-
 </script>
 
 <style>
     /*.v-label {*/
         /*font-size: 32px*/
     /*}*/
-</style>
-
-
 </style>

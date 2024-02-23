@@ -1,5 +1,6 @@
 # Venv name
 fd
+env
 
 #cfg
 email_creds.cfg

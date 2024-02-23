@@ -5,6 +5,7 @@ phases:
     commands:
       - cd website
       - npm install
+      - cp src/data/api-${MATURITY}.js src/data/api.js
       - npm run build
       - cd dist
       - aws s3 sync . "s3://${S3_BUCKET}"

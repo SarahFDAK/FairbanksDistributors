@@ -18,12 +18,13 @@
         ></v-select>
       <v-list subheader>
         <template v-for="category of allItems">
-        <v-toolbar :id="category.name" color="primary" class="headline" dark flat>
+        <v-toolbar v-bind:key="category.name" :id="category.name" color="primary" class="headline" dark flat>
             {{ category.name}}
         </v-toolbar>
 
           <template v-for="item in category.items">
             <v-list-tile
+              v-bind:key="item.id"
               v-on:click="onOpenDialog(item)">
               <v-list-tile-content>
                 <v-list-tile-title>

@@ -4,27 +4,27 @@
       "name": "Franz Natural Breads",
       "items": [
         {
-          "name": "Franz Lake Washington Honey Oat & Nut",
+          "name": "Lake Wash Honey Oat & Nut",
           "upc": "0 72220-00848 7",
           "tray": 10.0
         },
         {
-          "name": "Franz McKenzie Farms Buttermilk",
+          "name": "McKenzie Farms Buttermilk",
           "upc": "0 72220-00054 2",
           "tray": 10.0
         },
         {
-          "name": "Franz Save The Bee Wheat Bread",
+          "name": "Save The Bee Wheat",
           "upc": "0 72220-00842 5",
           "tray": 10.0
         },
         {
-          "name": "Franz San Juan Island 9 Whole Grain Bread",
+          "name": "San Juan Island 9 Grain",
           "upc": "0 72220-00457 1",
           "tray": 10.0
         },
         {
-          "name": "Franz Big Horn Valley 100% Whole Wheat",
+          "name": "Big Horn Valley 100%",
           "upc": "0 72220-00453 3",
           "tray": 10.0
         }
@@ -34,29 +34,49 @@
       "name": "Franz Organic Breads",
       "items": [
         {
-          "name": "Franz Organic Willamette Valley Great Seed",
+          "name": "Organic Willamette Valley Great Seed",
           "upc": "0 72220-00859 3",
           "tray": 10.0
         },
         {
-          "name": "Franz Organic Big Horn Valley 100% Whole Wheat",
+          "name": "Organic Big Horn Valley 100% Whole Wheat",
           "upc": "0 72220-00858 6",
           "tray": 10.0
         },
         {
-          "name": "Franz Organic Rogue River Twenty Four",
+          "name": "Organic Rogue River Twenty Four",
           "upc": "0 72220-00865 4",
           "tray": 10.0
         },
         {
-          "name": "Franz Organic Rogue River 24 Grain Thin Slice",
+          "name": "Organic Honey Oat",
+          "upc": "0 72220-00826 5",
+          "tray": 10.0
+        },
+        {
+          "name": "Organic Rogue River 24 Grain Thin Slice",
           "upc": "0 72220-00869 2",
           "tray": 10.0
         },
         {
-          "name": "Franz Organic Great Seed Thin Slice",
+          "name": "Organic Great Seed Thin Slice",
           "upc": "0 72220-00871 5",
           "tray": 10.0
+        }
+      ]
+    },
+    {
+      "name": "Keto Bread",
+      "items": [
+        {
+          "name": "Keto White Bread",
+          "upc": "0 72220-02000 7",
+          "tray": 12.0
+        },
+        {
+          "name": "Keto Buns",
+          "upc": "0 72220-02002 1",
+          "tray": 9.0
         }
       ]
     },
@@ -64,28 +84,33 @@
       "name": "Franz Gluten Free Products",
       "items": [
         {
-          "name": "Franz Bakehouse Gluten Free 7 Grain",
+          "name": "Gluten Free 7 Grain",
           "upc": "0 72220-00991 0",
           "tray": 15.0
         },
         {
-          "name": "Franz Bakehouse Gluten Free Mountain White",
+          "name": "Gluten Free Mountain White",
           "upc": "0 72220-00994 1",
           "tray": 15.0
         },
         {
-          "name": "Franz Bakehouse Gluten Free Hamburger Buns 4pk",
+          "name": "Gluten Free Hamburger Buns 4pk",
           "upc": "0 72220-00992 7",
           "tray": 15.0
         },
         {
-          "name": "Franz Bakehouse Gluten Free Raisin Bread",
+          "name": "Gluten Free Raisin Bread",
           "upc": "0 72220-00993 1",
           "tray": 15.0
         },
         {
-          "name": "Franz Bakehouse Gluten Free Great Seed",
+          "name": "Gluten Free Great Seed",
           "upc": "0 72220-00998 9",
+          "tray": 15.0
+        },
+        {
+          "name": "Gluten Free Blueberry",
+          "upc": "0 72220-01011 4",
           "tray": 15.0
         }
       ]
@@ -111,13 +136,8 @@
       ]
     },
     {
-      "name": "Seattle International Breads",
+      "name": "Seattle Int. Breads",
       "items": [
-        {
-          "name": "Seattle Internat'l Sliced Sourdough",
-          "upc": "0 71025-05723 2",
-          "tray": 8.0
-        },
         {
           "name": "Seattle Internat'l Garlic French Foil",
           "upc": "0 72220-10162 1",
@@ -126,11 +146,6 @@
         {
           "name": "Seattle Internat'l White Pita",
           "upc": "0 72220-10172 0",
-          "tray": 9.0
-        },
-        {
-          "name": "Seattle Internat'l Wheat Pita",
-          "upc": "0 72220-10173 7",
           "tray": 9.0
         }
       ]
@@ -151,7 +166,7 @@
       ]
     },
     {
-      "name": "Seattle International Rolls",
+      "name": "Seattle Int. Rolls",
       "items": [
         {
           "name": "Seattle Internat'l Brioche Buns",
@@ -171,7 +186,7 @@
       ]
     },
     {
-      "name": "Seattle Sourdough Baking Co. Breads",
+      "name": "Seattle Sour. Breads",
       "items": [
         {
           "name": "Seattle Sour Old Town Sourdough Bread",
@@ -219,14 +234,9 @@
       "name": "Franz Dinner Rolls",
       "items": [
         {
-          "name": "Franz Brown & Serve",
-          "upc": "0 72220-00186 0",
-          "tray": 6.0
-        },
-        {
-          "name": "Franz Hawaiian Dinner Rolls",
-          "upc": "0 72220-00543 1",
-          "tray": 7.0
+          "name": "Franz Hawaiian Dinner Rolls 4-pk",
+          "upc": "0 72220-00544 8",
+          "tray": 20.0
         },
         {
           "name": "AK Grains Sweet Rolls",
@@ -260,7 +270,7 @@
         },
         {
           "name": "Franz 100% Wheat English Muffins 6's",
-          "upc": "0 72220-00528 1",
+          "upc": "0 72220-00527 1",
           "tray": 18.0
         },
         {
@@ -301,6 +311,11 @@
         {
           "name": "New York Sourdough Bagels",
           "upc": "0 72220-09991 1",
+          "tray": 12.0
+        },
+        {
+          "name": "New York Hawaiian Bagels",
+          "upc": "0 72220-09989 8",
           "tray": 12.0
         },
         {
@@ -354,6 +369,16 @@
           "tray": 18.0
         },
         {
+          "name": "Franz Blueberry Donuts 6's",
+          "upc": "0 72220-21996 8",
+          "tray": 14.0
+        },
+        {
+          "name": "Franz Lemon Donuts 6's",
+          "upc": "0 72220-21994 4",
+          "tray": 14.0
+        },
+        {
           "name": "Franz Seasonal Donut 6's",
           "upc": "0 72220-21997 5",
           "tray": 14.0
@@ -366,11 +391,6 @@
         {
           "name": "Franz Bake Shoppe 4pk Dessert Cup",
           "upc": "0 72220-22049 0",
-          "tray": 36.0
-        },
-        {
-          "name": "Franz Bake Shoppe 4pk Chocolate Dessert Cup",
-          "upc": "0 72220-22116 9",
           "tray": 36.0
         }
       ]

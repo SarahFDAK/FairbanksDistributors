@@ -1,7 +1,6 @@
 import actions from './orders/actions';
 import { mutations } from './orders/mutation';
 import { getters } from './orders/getters';
-import { storeNames } from './routes';
 import Vuex from 'vuex';
 
 function alaskaTime(){
@@ -31,7 +30,7 @@ export default new Vuex.Store({
       type: 'None',
       orderNotes: '',
     },
-    storeNames: storeNames,
+    storeNames: [],
     orderTypes: ['Chips', 'Freezer Bread', 'Fresh Bread', 'Tortillas/Salsa'],
   },
   actions,
