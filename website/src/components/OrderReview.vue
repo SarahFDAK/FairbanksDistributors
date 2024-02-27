@@ -4,7 +4,7 @@
 
     <v-list two-line>
       <template v-for="category in orderItems">
-        <v-list v-bind:key="category.name" subheader class="headline">
+        <v-list subheader class="headline">
           <v-icon style="padding-right: 9px; padding-bottom: 7px" small>local_offer</v-icon> {{ category.name}}
         </v-list>
         <template v-for="item in category.items">

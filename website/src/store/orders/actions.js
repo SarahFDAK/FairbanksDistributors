@@ -10,13 +10,12 @@ import {
   SET_DELIVERY_LOCATION,
   SET_CATEGORIES,
   SET_DATA,
-  SET_STORES,
   LOAD_ITEM_DATA,
   HIDEMAIN,
   SHOWMAIN,
   SHOW_UPLOAD,
   HIDE_UPLOAD,
-  ADD_ORDER_NOTES,
+  ADD_ORDER_NOTES, 
   SET_ORDER_TYPE,
   RESTORE_ORDER,
 } from './mutation';
@@ -44,10 +43,6 @@ export default {
 
   setCategories({ commit }, categories) {
     commit(SET_CATEGORIES, categories);
-  },
-
-  setStores({ commit }, stores) {
-    commit(SET_STORES, stores);
   },
 
   setData({ commit }, data_tuple) {

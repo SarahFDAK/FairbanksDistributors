@@ -1,6 +1,6 @@
 {
     "production": {
-        "app_function": "application.fd_app",
+        "app_function": "application.app",
         "aws_region": "us-west-2",
         "project_name": "backend",
         "runtime": "python3.6",
@@ -12,7 +12,7 @@
         "role_arn": "arn:aws:iam::168560130205:role/zappa-default-role"
     },
     "dev": {
-        "app_function": "application.fd_app",
+        "app_function": "application.app",
         "aws_region": "us-west-2",
         "project_name": "backend",
         "runtime": "python3.6",

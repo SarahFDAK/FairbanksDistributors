@@ -27,13 +27,13 @@
           pa-5
           column>
               <template v-for="type of orderTypes">
-                <v-flex v-if="type === 'Chips' || type === 'Freezer Bread'" v-bind:key="type">
+                <v-flex v-if="type === 'Chips' || type === 'Freezer Bread'">
                   <v-btn round block large color="primary"
                           @click="onOrderTypeSelected(type)">{{type}} Order
                   </v-btn>
                 </v-flex>
 
-                <v-flex v-else v-bind:key="type">
+                <v-flex v-else>
                   <v-btn round block large disabled color="primary"
                           @click="onOrderTypeSelected(type)">{{type}} Order
                   </v-btn>
@@ -50,6 +50,14 @@
                    Continue Order
                 </v-btn>
               </v-flex>
+              <!-- <v-flex>
+                <v-btn round block large disabled
+
+                  v-on:click=spreadsheetUpload
+                  color=info>
+                   Update Order Items
+                </v-btn>
+              </v-flex> -->
               <v-flex>
                 <v-btn round block large disabled
                   color=info>
@@ -70,7 +78,7 @@
 
 <script>
 import store from '../store';
-import { CLEAR_ORDER_ITEMS, CLEAR_ORDER_SETTINGS, SET_ORDER_TYPE, LOAD_ITEM_DATA, RESTORE_ORDER } from "../store/orders/mutation";
+import { CLEAR_ORDER_ITEMS, CLEAR_ORDER_SETTINGS, SET_ORDER_TYPE, SET_DATA, LOAD_ITEM_DATA, RESTORE_ORDER } from "../store/orders/mutation";
 
 export default {
   name: 'MainMenu',

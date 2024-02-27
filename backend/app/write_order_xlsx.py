@@ -116,10 +116,8 @@ def make_categories(order_info):
 
     return categories
 
-
 def get_order_rows(order_info, order_catagories):
     return len(order_info['items']) + 2*len(order_catagories)
-
 
 def write_category(worksheet, category, row_index, column):
     if column == "left":
@@ -207,8 +205,7 @@ def write_header(worksheet, order_info):
     worksheet.oddHeader.left.text = get_order_date()
     worksheet.oddHeader.left.size = "12"
     worksheet.oddHeader.left.font = "Arial"
-    worksheet.oddHeader.center.text = "CUSTOMER: " + \
-        order_info['store']['name']
+    worksheet.oddHeader.center.text = "CUSTOMER: " + order_info['store']
     worksheet.oddHeader.center.size = "14"
     worksheet.oddHeader.center.font = "Arial"
     worksheet.oddHeader.right.text = "DATE ORDER TAKEN: " + str(date.today())

@@ -177,12 +177,12 @@ export default {
               this.$store.dispatch(CLEAR_ORDER_SETTINGS)
             }
           }
-        // eslint-disable-next-line
-        ).catch(_ => {
-          this.snackbarText = "No Network Connection";
-          this.isLoading = false;
-          this.snackbarNotifier = true;
-        });
+        )
+              .catch(err=> {
+                this.snackbarText = "No Network Connection";
+                this.isLoading = false;
+                this.snackbarNotifier = true;
+              });
     }
   }
 }
