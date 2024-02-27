@@ -61,6 +61,7 @@ export const routes = [
       "rsr": [""]
     },
     {
+
       "storeName": "Walgreens",
       "rsr": [""]
     },
@@ -71,7 +72,7 @@ export const routes = [
     {
       "storeName": "IGA",
       "rsr": [""]
-    }
+    },
 
 ];
 
