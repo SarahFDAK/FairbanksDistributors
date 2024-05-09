@@ -19,7 +19,7 @@ def csv_from_excel():
 def get_data(xls_path):
     book = xlrd.open_workbook(xls_path)
     sheet = book.sheet_by_index(0)
-    num_pages = int(math.ceil(sheet.nrows // 70))
+    num_pages = int(math.ceil(sheet.nrows // 69))
     return_data = []
     for page in range(num_pages):
         row_range = range(page*72, min(page*72+72, sheet.nrows))
