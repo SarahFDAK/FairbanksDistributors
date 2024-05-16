@@ -19,13 +19,13 @@ def csv_from_excel():
 def get_data(xls_path):
     book = xlrd.open_workbook(xls_path)
     sheet = book.sheet_by_index(0)
-    num_pages = math.ceil(sheet.nrows // 70)
+    'num_pages = math.ceil(sheet.nrows // 70)
     return_data = []
-    for page in range(num_pages):
-        row_range = range(page*72, min(page*72+72, sheet.nrows))
-        return_data += [[sheet.cell_value(r, c) for c in range(0, 5)] for r in row_range] + \
-                       [[sheet.cell_value(r, c) for c in range(5, 10)]
-                        for r in row_range]
+    'for page in range(num_pages):
+        'row_range = range(page*72, min(page*72+72, sheet.nrows))
+    return_data += [[sheet.cell_value(r, c) for c in range(0, 5)] for r in range(sheet.nrows] + \
+                   [[sheet.cell_value(r, c) for c in range(5, 10)]
+                    for r in range(sheet.nrows]
     return return_data
 
 
